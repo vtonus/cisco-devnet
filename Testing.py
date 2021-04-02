@@ -8,5 +8,6 @@ with manager.connect(host=router["host"], port=router["port"], username=router["
   print(capability)
  m.close_session()
 
+print("Fim da execucao")
 
 
