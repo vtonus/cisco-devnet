@@ -16,9 +16,9 @@ response = requests.get(url, headers=headers, auth=(
 
 api_data = response.json()
 print("/" * 50)
-pprint(api_data["Cisco-IOS-XE-interfaces-oper:interfaces/interface"]["description"])
+pprint(api_data["Cisco-IOS-XE-interfaces-oper:interface"]["description"])
 print("/" * 50)
-if api_data["Cisco-IOS-XE-interfaces-oper:interfaces/interface"]["admin-status"] == 'if-state-up':
+if api_data["Cisco-IOS-XE-interfaces-oper:interface"]["admin-status"] == 'if-state-up':
  print("Interface is UP")
 
 
